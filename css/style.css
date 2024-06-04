@@ -1,5 +1,54 @@
 .logo{
     height: 60px;
     width: 60px;
-    border: 1px solid rgb(179, 243, 83);
+    border-radius: 50%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7R6kv84R9NNvyQQqdVOw_XB8OyIxfIK71Gg&s);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(196, 212, 249, 0.914);
+}
+
+.nav-item{
+    border: 1px solid red;
+    padding: 8px;
+    border-radius: 5px;
+    color: black;
+}
+
+nav>section {
+    display: flex;
+    align-items: center;
+}
+
+.banner-home{
+    height: 350px;
+    border: 1px solid red;
+}
+
+.fasilitas{
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-hasil{
+    height: 120px;
+    border: 1px solid red;
+}
+
+.pesan{
+    display: flex;
+}
+
+.hasil{
+    width: 100%;
+}
+
+.section-container{
+   background-color: rgb(237, 234, 234);
 }
