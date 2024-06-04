@@ -1,2 +1,5 @@
-/* untuk tes git */
-/* ada PERUBAHAN*/
+.logo{
+    height: 60px;
+    width: 60px;
+    border: 1px solid blue;
+}
