@@ -3,19 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dian's Web Portofolio</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <nav>
+    <nav class="skrol">
       <div class="logo"></div>
 
       <section>
         <a class="nav-item" href="#home">Home</a>
-        <a class="nav-item" href="#fasilitas">Our Profile</a>
-        <a class="nav-item" href="">Achievement</a>
-        <a class="nav-item" href="pesan">Message Us</a>
+        <a class="nav-item" href="#fasilitas">Our Facilities</a>
+        <a class="nav-item" href="#pesan">Message Us</a>
       </section>
     </nav>
 
@@ -25,13 +24,36 @@
       <!-- home -->
       <section id="home">
         <header>
-          <h1>Hi Dian, Welcome to website!</h1>
+          <h1>
+            Hi
+            <span
+              id="name"
+              style="font-style: italic; font-size: larger; font-weight: 300"
+              >-</span
+            >
+            Selamat datang di web kami!
+          </h1>
+          <button id="tombol">Input nama</button>
         </header>
 
         <article>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Ini adalah website sekolah kami</p>
 
-          <div class="banner-home"></div>
+          <div class="banner-home">
+            <img
+              class="img-slideshow"
+              src="https://sumbar.kemenag.go.id/v2/uploads/images/image_1920x_6427f4b3dfd10.jpg"
+            />
+            <img
+              class="img-slideshow"
+              src="https://man2kotapadang.sch.id/wp-content/uploads/2021/10/Untitled-1024x768.png"
+            />
+            <img class="img-slideshow" src="assets/visi.png" />
+            <br />
+
+            <button onclick="plusDivs(-1)">Sebelumnya</button>
+            <button onclick="plusDivs(1)">Selanjutnya</button>
+          </div>
         </article>
       </section>
 
@@ -40,23 +62,34 @@
       <!-- our facilitation -->
       <section id="fasilitas">
         <header>
-          <h1>Our Facilitation</h1>
+          <h1>Our Facilities</h1>
         </header>
 
         <article class="fasilitas">
           <div>
-            <div style="width: 50px; height: 50px; border: 1px solid red"></div>
-            <h4>Professional Teacher</h4>
+            <div
+              class="guru"
+              style="width: 100px; height: 100px; border-radius: 80px"
+            ></div>
+            <h4 style="text-align: center">
+              <a href="" style="text-decoration: none">Professional Teacher</a>
+            </h4>
           </div>
 
           <div>
-            <div style="width: 50px; height: 50px; border: 1px solid red"></div>
-            <h4>Sport Field</h4>
+            <div
+              class="olahraga"
+              style="width: 100px; height: 100px; border-radius: 80px"
+            ></div>
+            <h4 style="text-align: center">Sport Field</h4>
           </div>
 
           <div>
-            <div style="width: 50px; height: 50px; border: 1px solid red"></div>
-            <h4>Classroom</h4>
+            <div
+              class="ruangan"
+              style="width: 100px; height: 100px; border-radius: 80px"
+            ></div>
+            <h4 style="text-align: center">Classroom</h4>
           </div>
         </article>
       </section>
@@ -72,20 +105,51 @@
         <section class="pesan">
           <!-- FORM -->
           <section>
-            <form>
-              <label>Name</label>
-              <input />
+            <form name="message-form" onsubmit="return validateForm()">
+              Nama:
+              <input placeholder="Nama" type="text" name="full-name" />
+              <br />
+
+              Tanggal Lahir:
+              <input
+                type="date"
+                name="birth-date"
+                style="width: 52%; margin-top: 10px"
+              />
+              <br />
+
+              Jenis Kelamin:
+              <input type="radio" id="male" name="gender" value="Laki-laki" />
+              <label for="male">Laki-laki</label>
+              <input type="radio" id="female" name="gender" value="Perempuan" />
+              <label for="female">Perempuan</label>
+              <br />
+
+              Pesan:
+              <textarea placeholder="Pesan" name="messages"></textarea>
+              <br />
+
+              <input type="submit" value="Submit" style="width: 90%" />
             </form>
           </section>
 
           <!-- HASIL -->
           <section class="hasil">
-            <div class="form-hasil"></div>
+            <div class="form-hasil">
+              <div>
+                <p>Nama: <span id="sender-full-name"></span></p>
+                <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+                <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                <p>Pesan: <span id="sender-messages"></span></p>
+              </div>
+            </div>
           </section>
         </section>
       </section>
     </section>
 
     <footer></footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

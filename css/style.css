@@ -1,24 +1,32 @@
+body{
+    background-color: rgb(195, 190, 190);
+}
+
 .logo{
     height: 60px;
     width: 60px;
-    border-radius: 50%;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7R6kv84R9NNvyQQqdVOw_XB8OyIxfIK71Gg&s);
+    border-radius: 50px;
+    background-image: url(https://man2kotapadang.sch.id/wp-content/uploads/2021/09/cropped-pngaaa.com-72451.png);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    margin-bottom: 14px;
 }
 
 
 nav{
     display: flex;
     justify-content: space-between;
-    background-color: rgba(196, 212, 249, 0.914);
 }
 
 .nav-item{
-    border: 1px solid red;
-    padding: 8px;
-    border-radius: 5px;
+    border: 2px solid rgb(20, 20, 20);
+    padding: 16px 24px;
+    border-radius: 3px;
     color: black;
+    align-items: center;
+    text-decoration: none;
+    flex-direction: column;
 }
 
 nav>section {
@@ -27,8 +35,8 @@ nav>section {
 }
 
 .banner-home{
-    height: 350px;
-    border: 1px solid red;
+    height: 850px;
+    width: 420px;
 }
 
 .fasilitas{
@@ -37,8 +45,10 @@ nav>section {
 }
 
 .form-hasil{
-    height: 120px;
-    border: 1px solid red;
+    height: 80%;
+    border: 1px solid rgb(5, 5, 5);
+    margin-bottom: 10%;
+    text-align: start;
 }
 
 .pesan{
@@ -46,9 +56,57 @@ nav>section {
 }
 
 .hasil{
-    width: 100%;
+    width: 50%;
+    padding-left: 10%;
 }
 
-.section-container{
-   background-color: rgb(237, 234, 234);
-}
+input[type=text], textarea{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: #1e71e7;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+  .guru{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBN-YuHcMK_Q5ssSx0KPctxujMKWWoEiOYXg&s);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .olahraga{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5LvwYsk8c6L0AZs3Axa7k3wCcX4NMQBDRtGKL9OQ0vzhfUsvuMJ5fdYCCgKn1UyAWpik&usqp=CAU);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .ruangan{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCYBEIL6JWsCBzBmiOkt8uz-QwlLBYZqcmfw&s);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media only screen and (max-width: 600px) {
+    nav {
+      flex-direction: column;
+    }
+  }
