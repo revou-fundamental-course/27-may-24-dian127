@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(195, 190, 190);
+    background-color: rgb(211, 206, 206);
 }
 
 .logo{
@@ -58,6 +58,18 @@ nav>section {
 .hasil{
     width: 50%;
     padding-left: 10%;
+}
+
+.fasilitas a{
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.fasilitas a:hover{
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 input[type=text], textarea{

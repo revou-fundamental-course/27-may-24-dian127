@@ -16,7 +16,7 @@ function validateForm(){
     const messages = document.forms["message-form"]["messages"].value;
 
     if (name == "" || birthDate == "" || gender == "" || messages == "") {
-        alert("Tidak boleh ada data yang kosong");
+        alert("Tidak boleh ada data yang kosong!");
         return false;
     }
 
